@@ -1,0 +1,48 @@
+{
+  "name": "chitterchatter",
+  "version": "0.0.0",
+  "description": "A small project that just runs",
+  "repository": "https://github.com/wzhouwzhou/chitterchatter",
+  "main": "index.js",
+  "scripts": {
+    "clean": "rm -rf ./comp",
+    "transcompile": "npm run clean; coffee --compile --transpile --inline-map -o ./comp --no-header ./src/",
+    "transcompile-watch": "npm run clean; coffee --compile --transpile --inline-map -o ./comp --no-header -w ./src/",
+    "minify": "coffee ./minify.coffee",
+    "minify-watch": "coffee ./minify.coffee --watch",
+    "build": "npm run transcompile; npm run minify; npm run clean;",
+    "debug-build": "npm run transcompile; npm run minify-watch;",
+    "count-lines": "find ./src -name '*.*' | xargs wc -l",
+    "start": "node index.js"
+  },
+  "author": "William Zhou",
+  "license": "SEE LICENSE IN LICENSE",
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-plugin-transform-regenerator": "^6.26.0",
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-preset-env": "^1.6.1",
+    "coffeescript": "^2.0.3",
+    "uglify-js": "^3.3.20"
+  },
+  "dependencies": {
+    "JSONStream": "^1.3.2",
+    "ascii-art": "^1.4.3",
+    "babel-polyfill": "^6.26.0",
+    "babel-runtime": "^6.26.0",
+    "chalk": "^2.3.0",
+    "debug": "^3.1.0",
+    "discord.js": "github:hydrabolt/discord.js",
+    "discordblacklist": "^2.0.1",
+    "erlpack": "github:discordapp/erlpack",
+    "eventemitter2": "^5.0.1",
+    "fs": "0.0.1-security",
+    "lodash": "^4.17.4",
+    "moment-duration-format": "^2.2.2",
+    "nodecpp-test": "git+https://github.com/wzhouwzhou/nodecpp-test.git",
+    "os": "^0.1.1",
+    "regenerator": "^0.12.3",
+    "uws": "^9.14.0",
+    "ytsearcher": "^1.0.3"
+  }
+}

@@ -1,0 +1,1 @@
+"use strict";Object.defineProperty(exports,"__esModule",{value:true});var TIMECONSTANTS;TIMECONSTANTS={ADD_ERROR:"Unit or quantity must be a Time instance, Date instance, string (of unit, if using this add a second argument of the amount of that unit to use) or a number (milliseconds)!"};exports.default=TIMECONSTANTS;

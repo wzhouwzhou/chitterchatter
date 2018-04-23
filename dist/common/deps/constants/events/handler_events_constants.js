@@ -1,0 +1,1 @@
+"use strict";Object.defineProperty(exports,"__esModule",{value:true});var HANDLEREVENTS;HANDLEREVENTS={HANDLEABLE_ENABLED:"handleable_enabled",HANDLEABLE_DISABLED:"handleable_disabled",HANDLEABLE_LOADED:"handleable_load",HANDLEABLE_DETACHED:"handleable_detached"};exports.default=HANDLEREVENTS;

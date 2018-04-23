@@ -1,0 +1,5 @@
+{
+  "TOKEN": "Account token",
+  "CHANNELID": "Main Channel ID to send messages to",
+  "MSGTIMEOUT": [3000, 7000]
+}
